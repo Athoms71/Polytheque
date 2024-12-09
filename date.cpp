@@ -1,5 +1,4 @@
 #include "date.h"
-#include <cassert>
 #include <iostream>
 #include <ostream>
 
@@ -14,8 +13,14 @@ bool Date::isDate(int month, int day, int year)
 
 Date::Date(int month, int day, int year)
 {
-    assert(isDate(month, day, year));
-    _month = month;
-    _day = day;
-    _year = year;
+    if (isDate(month, day, year))
+    {
+        _month = month;
+        _day = day;
+        _year = year;
+    }
+    else
+    {
+        std::cout << "Date non valide.\n";
+    }
 }

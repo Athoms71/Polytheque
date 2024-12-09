@@ -6,7 +6,7 @@
 class Livre
 {
 public:
-    Livre(std::string titre, Auteur auteur, std::string langue, std::string genre, Date publication, std::string isbn, std::vector<std::string> listeISBN);
+    Livre(std::string titre, Auteur auteur, std::string langue, std::string genre, Date publication, std::string isbn, std::vector<std::string> listeLecteurs);
 
     // Setters
     void setTitre(std::string titre);
@@ -15,7 +15,7 @@ public:
     void setGenre(std::string genre);
     void setAnnee(Date publication);
     void setISBN(std::string isbn);
-    void setListe(std::vector<std::string> listeISBN);
+    void setListe(std::vector<std::string> listeLecteurs);
 
     // Getters
     std::string getTitre() const;
@@ -33,5 +33,5 @@ private:
     std::string _genre;
     Date _publication;
     std::string _isbn;
-    std::vector<std::string> _listeISBN;
+    std::vector<std::string> _listeLecteurs;
 };
