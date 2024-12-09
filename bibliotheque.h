@@ -6,10 +6,12 @@
 #include "lecteur.h"
 #include "livre.h"
 
-class Bibliotheque
-{
+class Bibliotheque {
 public:
     Bibliotheque();
+    void addLecteur(const Lecteur& lecteur);
+    void addLivre(const Livre& livre);
+    void addAuteur(const Auteur& auteur);
 
 private:
     std::vector<Auteur> _listeAuteurs;
