@@ -1,7 +1,7 @@
 #include "livre.h"
 
 // Constructeur
-Livre::Livre(std::string titre, Auteur auteur, std::string langue, std::string genre, Date publication, std::string isbn, std::vector<std::string> listeLecteurs)
+Livre::Livre(std::string titre, Auteur auteur, std::string langue, std::string genre, Date publication, std::string isbn, std::vector<std::string> listeLecteurs, bool etat = false)
 {
     _titre = titre;
     _auteur = auteur;
@@ -10,6 +10,7 @@ Livre::Livre(std::string titre, Auteur auteur, std::string langue, std::string g
     _publication = publication;
     _isbn = isbn;
     _listeLecteurs = listeLecteurs;
+    _etat = etat;
 }
 
 // Setters
@@ -42,6 +43,11 @@ void Livre::setListe(std::vector<std::string> listeLecteurs)
     _listeLecteurs = listeLecteurs;
 }
 
+void Livre::setEtat(int etat)
+{
+    _etat = etat;
+}
+
 // Getters
 std::string Livre::getTitre() const
 {
@@ -70,4 +76,8 @@ std::string Livre::getISBN() const
 std::vector<std::string> Livre::getListe() const
 {
     return _listeLecteurs;
+}
+bool Livre::getEtat() const
+{
+    return _etat;
 };

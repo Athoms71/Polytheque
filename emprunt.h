@@ -1,4 +1,5 @@
 #include "date.h"
+#include "livre.h"
 #include <iostream>
 
 class Emprunt
@@ -21,4 +22,5 @@ private:
     Date _dateEmprunt;
     std::string _isbn;
     std::string _idLecteur;
+    bool estDisponible(Livre livre);
 };

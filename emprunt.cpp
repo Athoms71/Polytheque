@@ -39,3 +39,12 @@ void Emprunt::setIDLecteur(std::string idLecteur)
 {
     _idLecteur = idLecteur;
 }
+
+bool Emprunt::estDisponible(Livre livre)
+{
+    if (livre.getEtat())
+    {
+        return true;
+    }
+    return false;
+}
