@@ -1,15 +1,16 @@
 #include <iostream>
 #include <vector>
 #include "date.h"
+#include "auteur.h"
 
 class Livre
 {
 public:
-    Livre(std::string titre, std::string auteur, std::string langue, std::string genre, Date publication, std::string isbn, std::vector<std::string> listeISBN);
+    Livre(std::string titre, Auteur auteur, std::string langue, std::string genre, Date publication, std::string isbn, std::vector<std::string> listeISBN);
 
     // Setters
     void setTitre(std::string titre);
-    void setAuteur(std::string auteur);
+    void setAuteur(Auteur auteur);
     void setLangue(std::string langue);
     void setGenre(std::string genre);
     void setAnnee(Date publication);
@@ -18,7 +19,7 @@ public:
 
     // Getters
     std::string getTitre();
-    std::string getAuteur();
+    Auteur getAuteur();
     std::string getLangue();
     std::string getGenre();
     Date getAnnee();
@@ -27,7 +28,7 @@ public:
 
 private:
     std::string _titre;
-    std::string _auteur;
+    Auteur _auteur;
     std::string _langue;
     std::string _genre;
     Date _publication;
