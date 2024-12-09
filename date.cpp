@@ -1,25 +1,31 @@
 #include "date.h"
 #include <iostream>
 
-int Date::getMonth() {
+int Date::getMonth()
+{
     return _month;
 }
-int Date::getDay() {
+int Date::getDay()
+{
     return _day;
 }
-int Date::getYear() {
+int Date::getYear()
+{
     return _year;
 }
 
-void Date::setMonth(int month) {
+void Date::setMonth(int month)
+{
     _month = month;
 }
 
-void Date::setDay(int day) {
+void Date::setDay(int day)
+{
     _day = day;
 }
 
-void Date::setYear(int year) {
+void Date::setYear(int year)
+{
     _year = year;
 }
 
