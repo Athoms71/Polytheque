@@ -1,6 +1,7 @@
 
 class Date {
 public:
+    Date() : _month(1), _day(1), _year(1900) {};
     Date(int month, int day, int year);
     int getMonth();
     int getDay();
