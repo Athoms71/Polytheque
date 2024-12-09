@@ -1,6 +1,27 @@
 #include "date.h"
 #include <iostream>
-#include <ostream>
+
+int Date::getMonth() {
+    return _month;
+}
+int Date::getDay() {
+    return _day;
+}
+int Date::getYear() {
+    return _year;
+}
+
+void Date::setMonth(int month) {
+    _month = month;
+}
+
+void Date::setDay(int day) {
+    _day = day;
+}
+
+void Date::setYear(int year) {
+    _year = year;
+}
 
 bool Date::isDate(int month, int day, int year)
 {
