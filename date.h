@@ -2,9 +2,12 @@
 class Date {
 public:
     Date(int month, int day, int year);
-    int getMonth() {return _month;};
-    int getDay() {return _day;};
-    int getYear() {return _year;};
+    int getMonth();
+    int getDay();
+    int getYear();
+    void setMonth(int month);
+    void setDay(int day);
+    void setYear(int year);
 private:
     int _month;
     int _day;
