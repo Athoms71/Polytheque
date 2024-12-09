@@ -10,22 +10,22 @@ Auteur::Auteur(std::string id, std::string nom, std::string prenom, Date naissan
 }
 
 // Getters
-std::string Auteur::getID()
+std::string Auteur::getID() const
 {
     return _id;
 }
 
-std::string Auteur::getNom()
+std::string Auteur::getNom() const
 {
     return _nom;
 }
 
-std::string Auteur::getPrenom()
+std::string Auteur::getPrenom() const
 {
     return _prenom;
 }
 
-Date Auteur::getNaissance()
+Date Auteur::getNaissance() const
 {
     return _naissance;
 }

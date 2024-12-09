@@ -9,10 +9,10 @@ public:
     Auteur(std::string id, std::string nom, std::string prenom, Date naissance);
 
     // Getters
-    std::string getID();
-    std::string getNom();
-    std::string getPrenom();
-    Date getNaissance();
+    std::string getID() const;
+    std::string getNom() const;
+    std::string getPrenom() const;
+    Date getNaissance() const;
 
     // Setters
     void setID(std::string id);

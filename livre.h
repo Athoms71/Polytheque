@@ -18,13 +18,13 @@ public:
     void setListe(std::vector<std::string> listeISBN);
 
     // Getters
-    std::string getTitre();
-    Auteur getAuteur();
-    std::string getLangue();
-    std::string getGenre();
-    Date getAnnee();
-    std::string getISBN();
-    std::vector<std::string> getListe();
+    std::string getTitre() const;
+    Auteur getAuteur() const;
+    std::string getLangue() const;
+    std::string getGenre() const;
+    Date getAnnee() const;
+    std::string getISBN() const;
+    std::vector<std::string> getListe() const;
 
 private:
     std::string _titre;

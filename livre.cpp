@@ -43,31 +43,31 @@ void Livre::setListe(std::vector<std::string> listeISBN)
 }
 
 // Getters
-std::string Livre::getTitre()
+std::string Livre::getTitre() const
 {
     return _titre;
 }
-Auteur Livre::getAuteur()
+Auteur Livre::getAuteur() const
 {
     return _auteur;
 }
-std::string Livre::getLangue()
+std::string Livre::getLangue() const
 {
     return _langue;
 }
-std::string Livre::getGenre()
+std::string Livre::getGenre() const
 {
     return _genre;
 }
-Date Livre::getAnnee()
+Date Livre::getAnnee() const
 {
     return _publication;
 }
-std::string Livre::getISBN()
+std::string Livre::getISBN() const
 {
     return _isbn;
 }
-std::vector<std::string> Livre::getListe()
+std::vector<std::string> Livre::getListe() const
 {
     return _listeISBN;
 };
